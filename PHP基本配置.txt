@@ -1,0 +1,9 @@
+php 头部编码设置：
+header("Content-type: text/html; charset=utf-8");
+
+php中开启与关闭错误提示：
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT);
+
+
+方件上传相关配置文件：D:\wamp\bin\php\php5.5.12\php.ini[如上传时间，大小，最大值，最小值]

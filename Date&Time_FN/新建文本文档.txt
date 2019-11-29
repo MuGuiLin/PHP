@@ -1,0 +1,25 @@
+
+    /*
+     * 默认情况下，PHP解释显示的时间为“格林威治标准时间”，与我们本地的时间相差8个小时。
+     * php5后都要自己设置时区，要么修改php.ini的设置，要么在代码里修改。             
+     */ 
+
+     一、在PHP.INI中设置时区：         
+       date.timezone = PRC
+
+     二、 在代码中设置时区：
+       1 date_default_timezone_set('Asia/Shanghai');//'Asia/Shanghai'   亚洲/上海     
+       2 date_default_timezone_set('Asia/Chongqing');//其中Asia/Chongqing'为“亚洲/重庆”    
+       3 date_default_timezone_set('PRC');//其中PRC为“中华人民共和国”  
+       4 ini_set('date.timezone','Etc/GMT-8');      
+       5 ini_set('date.timezone','PRC');     
+       6 ini_set('date.timezone','Asia/Shanghai');
+       7 ini_set('date.timezone','Asia/Chongqing');
+     
+允许的强制转换有： 
+(int)，(integer) - 转换成整型 
+(bool)，(boolean) - 转换成布尔型 
+(float)，(double)，(real) - 转换成浮点型 
+(string) - 转换成字符串 
+(array) - 转换成数组 
+(object) - 转换成对象
